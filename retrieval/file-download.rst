@@ -105,17 +105,24 @@ Programmatically <./programmatic-access.html>`_.
 Using Globus
 ------------
 
-Globus provides a more user-friendly, feature-rich directory interface for
-interacting with the FTP server.
-Files can be downloaded through `Globus`_ 'EMBL-EBI Public Data'
+`Globus`_ is a fast, reliable file transfer service that makes it easy for users to move data between two or many places
+or between a server and a user’s machine (Windows, Mac or Linux). Globus automates the activity of managing file
+transfers: monitoring performance, retrying failed transfers, recovering from faults automatically whenever possible,
+and reporting status.
+Users can download data through `Globus`_ using collection `EMBL-EBI Public Data`_
 endpoint from the '/vol1' subfolder:
 
 .. image:: images/file-download-globus.png
 
 .. _`Globus`: https://app.globus.org/file-manager?origin_id=fd9c190c-b824-11e9-98d7-0a63aa6b37da&origin_path=%2Fgridftp%2Fena%2F
+.. _`EMBL-EBI Public Data`: https://app.globus.org/file-manager?origin_id=47772002-3e5b-4fd3-b97c-18cee38d6df2
 
-Globus also provides a command line interface (CLI) which can be used without access to a graphical user interface
-environment. See `here <https://docs.globus.org/cli/>`_ for details.
+Globus also provides many integration tools e.g. `GLobus CLI <https://docs.globus.org/cli/>`_,
+`Globus Connect Personal <docs.globus.org/globus-connect-personal/>`_,
+`Trasnfer API <https://docs.globus.org/api/transfer/>`_ and
+`Python <https://globus-sdk-python.readthedocs.io/en/stable/>`_
+& `Javascript <https://github.com/globus/globus-sdk-javascript#readme>`_ SDK's
+,  which can be used to download the data.
 
 To infer the Globus path for a file from the ftp path, do the following:
 
@@ -127,12 +134,11 @@ i.e. the above becomes:
 
 /vol1/fastq/ERR164/ERR164407/ERR164407.fastq.gz
 
-Note : The below globus endpoints have been retired :
-
-- EMBL-EBI Private endpoint
-- EMBL-EBI Private endpoint 2
-- EMBL-EBI Public endpoint
-- Shared EMBL-EBI public endpoint
+Please Note: *While HTTP(S) downloads are supported, Globus is primarily designed for high-performance, reliable,
+and secure transfers of large datasets. The Globus transfer service uses protocols like GridFTP and optimized TCP
+settings to maximize throughput and reliability, especially for multi-file or large-file transfers.
+So it is strongly recommended to use Integration tools provided by Globus because it offers better speed,
+resume capability, and error handling compared to standard HTTP downloads.*
 
 Using enaBrowserTools
 ---------------------
