@@ -28,18 +28,7 @@ If you have a GitHub account, you can use the 'Watch' button in the top right to
 Please note that Webin-CLI requires that you have Java installed before you can run it.
 You should have version 17 or newer installed, which can be downloaded from Java:
 
-- [ **Download Java** ](https://www.oracle.com/uk/java/technologies/downloads/#java17)
-
-Webin-CLI has been tested against openjdk version 1.8.0_212. You are recommended to use equivalent or later version.
-
-Download openapi JDKs from the below links:
-
-[https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
-
-Download Oracle JREs from the below links:
-
-- [ **Latest JRE Version** ](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-- [ Older JRE Versions ](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html)
+- [ **Download Java** ](https://openjdk.org/install/)
 
 ## Run the program as a Java jar file
 
