@@ -2,7 +2,7 @@
 Common Run Submission Errors
 ============================
 
-When you submit read data to ENA, we store and accession your files within `Runs <../submit/general-guide/metadata.html>`_.
+When you submit read data to ENA, we store and accession your files within :doc:`Runs </submit/general-guide/metadata>`.
 As part of the submission process, read data files must be uploaded to your Webin account's FTP directory.
 After you complete the submission, several validation procedures are applied to the file(s).
 If validation is successful files are archived, otherwise all account contacts are notified of the error(s).
@@ -88,7 +88,7 @@ You will need to re-register the MD5 value.
 Please see `Appendix: Correcting An MD5 Value`_ for information on how to do this.
 
 If you have many runs to update, you may wish to do this programmatically, by submitting corrected XML versions of your runs.
-View our pages on `Programmatic Run Updates <../update/metadata/programmatic-read.html>`_ to learn more about this.
+View our pages on :doc:`Programmatic Run Updates </update/metadata/programmatic-read>` to learn more about this.
 
 
 Error: Number Of Lines Is Not A Multiple Of Four
@@ -171,7 +171,7 @@ First please wait 1 week for the files to be processed.
 Sometimes your Run records may be affected by a delay in processing your submission, and you will receive the error email before the run processing is completed.
 
 If, after 1 week, the run record is still failing, you can check and update the file content, and then re-upload your run file.
-Please refer to our guide for `Accepted Read Data Formats <../submit/fileprep/reads.html>`_ to help identify your issue.
+Please refer to our guide for :doc:`Accepted Read Data Formats </submit/fileprep/reads>` to help identify your issue.
 
 If you cannot find a problem with your read file contents, please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_.
 

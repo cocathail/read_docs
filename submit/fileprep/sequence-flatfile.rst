@@ -8,7 +8,7 @@ Introduction
 
 The EMBL flat file format is the only way to submit all types of functional
 sequence annotation to ENA.
-See the `example flat file page <./flat-file-example.html>`_ for general
+See the :doc:`example flat file page </submit/fileprep/flat-file-example>` for general
 information on this format.
 
 The Entry Upload Templates provided on this page are skeletons of actual
@@ -72,7 +72,7 @@ annotation.
     FT                   /estimated_length={unknown or known}
 
 When you have prepared your flatfile, you will need to submit it using
-`Webin-CLI <../general-guide/webin-cli.html>`_.
+:doc:`Webin-CLI </submit/general-guide/webin-cli>`.
 
 **Available templates:**
 

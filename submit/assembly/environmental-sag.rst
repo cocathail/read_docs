@@ -14,7 +14,7 @@ Introduction
 ============
 
 Environmental SAG assemblies can be submitted to the European Nucleotide Archive (ENA) using the
-`Webin command line submission interface <../general-guide/webin-cli.html>`_ with ``-context genome``.
+:doc:`Webin command line submission interface </submit/general-guide/webin-cli>` with ``-context genome``.
 
 Please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ if you intend to submit an assembly
 assembled from third party data.
@@ -59,19 +59,19 @@ Genome assemblies except primary metagenomes are uniquely associated with a stud
 If you have not done so already, please register a study. If you intend to submit your SAG with annotation, make
 sure to register locus tag prefixes during this stage.
 
-- `Register a Study <../study.html>`_
+- :doc:`Register a Study </submit/study>`
 
 It is also strongly recommended to submit the reads from which the assembly was assembled. When submitting the raw reads
 in a Single-Cell Amplification study, these should either be in multi-fastq format or remain multiplexed in BAM format, 
 and be submitted to an **environmental** sample. This sample should use the most appropriate environmental checklist and an
-`environmental taxon <../../faq/taxonomy.html#environmental-biome-level-taxonomy>`_ (e.g. aquatic 
+:ref:`environmental taxon <biome-level-taxonomy>` (e.g. aquatic 
 metagenome (tax id: 1169740)).
 
-- `Submitting Raw Reads <../reads.html>`_
+- :doc:`Submitting Raw Reads </submit/reads>`
 
 If you do not intend to submit raw reads as part of your SAG submission, please make sure you have registered
 **environmental** samples anyway. These will represents the original sequenced biomaterial that your SAG was derived from.
-You will also need to follow `these guidelines <../../faq/metagenomes.html#how-do-i-submit-metagenome-assemblies-without-raw-data-or-primary-assemblies-to-point-to>`_
+You will also need to follow :doc:`these guidelines </faq/metagenomes>`
 for details on how to release your **environmental** samples. If no data is associated with a sample, it needs to be
 released manually in order to be available to the public.
 
@@ -85,7 +85,7 @@ hold all metadata related to the taxonomy of that subset as well as methods used
 
 .. image:: ../images/metadata_model_derivedanalysis.png
 
-**SAG** samples should be as `specific in taxonomy <../../faq/taxonomy.html#environmental-organism-level-taxonomy>`_ as
+**SAG** samples should be as :ref:`specific in taxonomy <organism-level-taxonomy>` as
 they can be and use the specific `GSC MISAGS <https://www.ebi.ac.uk/ena/browser/view/ERC000048>`_ checklist.
 
 Please make sure these **SAG** samples correctly reference the **environmental** sample  that the SAG was derived from.
@@ -96,7 +96,7 @@ You should also reference the source sample in the description:
 
 “This sample represents a Single-Cell Amplified Genome derived from the environmental sample ERSXXXXX”
 
-- `Register a Sample <../samples.html>`_
+- :doc:`Register a Sample </submit/samples>`
 
 Stage 2: Prepare the files
 ==========================
@@ -116,7 +116,7 @@ Contig assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
 
 This assembly level only requires information on the sequences and annotation (if any).
 
@@ -131,9 +131,9 @@ Chromosome assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
-- 1 `chromosome list file <../fileprep/assembly.html#chromosome-list-file>`_
-- 0-1 `unlocalised list files <../fileprep/assembly.html#unlocalised-list-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
+- 1 :doc:`chromosome list file </submit/fileprep/assembly>`
+- 0-1 :doc:`unlocalised list files </submit/fileprep/assembly>`
 
 This assembly level allows the submission of fully assembled chromosomes (including organelles, plasmids, and viral
 segments). This requires information on the sequences and annotation (if any) and submission of a chromosome list file
@@ -176,7 +176,7 @@ Please see further below for validation rules affecting some of these fields.
 The following file name fields are supported in the manifest file:
 
 - FASTA: sequences in fasta format
-- FLATFILE: sequences in `EMBL-Bank flat file format <../fileprep/flat-file-example.html>`_
+- FLATFILE: sequences in :doc:`EMBL-Bank flat file format </submit/fileprep/flat-file-example>`
 - AGP: Sequences in `AGP format <https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/>`_
 - CHROMOSOME_LIST: list of chromosomes
 
@@ -199,9 +199,8 @@ For example, the following manifest file represents an environmental single-cell
 Stage 3: Validate and submit the files
 ======================================
 
-Files are validated, uploaded and submitted using the `Webin command line submission interface
-<../general-guide/webin-cli.html>`_ (Webin-CLI).
-Please refer to the `Webin command line submission interface <../general-guide/webin-cli.html>`_ documentation for full
+Files are validated, uploaded and submitted using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` (Webin-CLI).
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation for full
 information about the submission process.
 
 Brief examples of Webin-CLI commands follow.
@@ -231,8 +230,7 @@ assigned accession number (see below) being reported at your command line.
 Meanwhile, a failed validation will provide direction to a report file where you can find a list of error messages
 explaining the reason for the failure, which you can address before re-attempting.
 
-For more information on how to install and use Webin-CLI, please refer to the `Webin-CLI Submission
-<../general-guide/webin-cli.html>`_ page.
+For more information on how to install and use Webin-CLI, please refer to the :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>` page.
 
 
 Assigned accession numbers
@@ -244,8 +242,7 @@ returned to the submitter by the Webin command line submission interface (Webin-
 ERZ accessions **should not** be used to reference the assembly in publications.
 The purpose of the ERZ accession number is for the submitter to be able to refer to their submission within the Webin
 submission service. For example, the submitter can retrieve the assigned genome assembly and sequence accessions from
-the `Webin Portal <../../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../../general-guide/reports-service.html>`_ using the ERZ accession number.
+the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>` using the ERZ accession number.
 This accession should be used to refer to the assembly in any conversations with helpdesk staff.
 
 For Environmental Single-cell Amplified Genome assemblies, long term stable accession numbers that can be used in publications are:
@@ -256,8 +253,8 @@ For Environmental Single-cell Amplified Genome assemblies, long term stable acce
 - Sequence accession(s) assigned once the assembly has been fully processed by ENA.
 
 Submitters can retrieve the genome and sequence accession numbers from the
-`Webin Portal <../general-guide/submissions-portal.html>`_ or from the
-`Webin reports service <../general-guide/reports-service.html>`_.
+:doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the
+:doc:`Webin reports service </submit/general-guide/reports-service>`.
 These accession numbers are also sent to the submitters by e-mail.
 
 Validation rules

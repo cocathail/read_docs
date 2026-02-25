@@ -16,15 +16,15 @@ On the other hand, be sure to edit any text enclosed in curly brackets
 
 To see the full range of available features and qualifiers, please visit
 `WebFeat <https://www.ebi.ac.uk/ena/WebFeat/>`_. To see any upcoming feature table
-changes see `here <feature-table-updates.html>`_.
+changes see :doc:`here </submit/fileprep/feature-table-updates>`.
 
 For a list of third party tools which may help with the creation of your
 flat file or conversion from another format, please see our page on
-`Third Party Tools <../../faq/third_party_tools.html>`_.
+:doc:`Third Party Tools </faq/third_party_tools>`.
 
 We have some pre-prepared flat file templates available for use with common
 submission types available too, please see
-`Entry Upload Templates <sequence-flatfile.html>`_.
+:doc:`Entry Upload Templates </submit/fileprep/sequence-flatfile>`.
 
 ::
 

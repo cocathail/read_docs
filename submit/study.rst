@@ -18,7 +18,7 @@ date has expired. The default for a newly registered study is to have a hold
 date two months after the submission date. You can change this date at will 
 should you need to release the data or delay its publication further. However,
 you will no longer have this option once the data are public. Read more on our
-`data release policies FAQ <../../latest/faq/release.html>`_.
+:doc:`data release policies FAQ </faq/release>`.
 
 Have a look at an `example <https://www.ebi.ac.uk/ena/browser/view/PRJEB1234>`_
 of a study in the ENA browser.
@@ -39,7 +39,7 @@ Submission Options
 ==================
 
 Studies can be submitted one of two ways, using the Webin Portal interface or the programmatic interface.
-For a general overview of these interfaces, please see the `General Guide on Submitting to ENA <general-guide.html>`_.
+For a general overview of these interfaces, please see the :doc:`General Guide on Submitting to ENA </submit/general-guide>`.
 Find specific advice on registering studies using your preferred method below:
 
 .. toctree::

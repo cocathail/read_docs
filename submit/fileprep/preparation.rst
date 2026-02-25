@@ -28,7 +28,7 @@ Oxford Nanopore FAST5 files, do not tar archive any collections of files - each
 should be uploaded separately.
 
 If you are unsure about the format that your files should be in, please view
-our `read data formats <../fileprep/reads.html>`_ page. This includes advice on general
+our :doc:`read data formats </submit/fileprep/reads>` page. This includes advice on general
 read data formats, as well as information specific to platforms or sequencing
 applications.
 
@@ -110,8 +110,7 @@ a second file and uploading this along with the data file. Alternatively, you
 can make a note of the value and enter it when prompted during the submission
 process.
 
-The Webin File Uploader is a program provided by ENA covered `here
-<upload.html>`_ which can be used to upload your files. It also
+The Webin File Uploader is a program provided by ENA covered :doc:`here </submit/fileprep/upload>` which can be used to upload your files. It also
 automatically creates ``.md5`` files and uploads them for you.
 
 If you make and upload your own ``.md5`` file, be sure it contains only the 32
@@ -125,8 +124,8 @@ File Validation Errors
 Improperly compressed files and incorrect MD5 values are two of the most common
 errors encountered when processing submitted read files. Often, this happens
 because the file upload was incomplete. When this occurs, you are automatically
-notified by email. Guidance on fixing such errors is given in our `common run
-submission errors <../../faq/runs.html>`_ page.
+notified by email. Guidance on fixing such errors is given in our :doc:`common run
+submission errors </faq/runs>` page.
 
 
 Next Steps
@@ -135,7 +134,7 @@ Next Steps
 Once you have compressed your files and recorded their MD5 values in some way,
 proceed to upload them:
 
-    `Data Upload Documentation <upload.html>`_
+    :doc:`Data Upload Documentation </submit/fileprep/upload>`
 
 
 Fair Use Policy

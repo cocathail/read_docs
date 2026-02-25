@@ -24,6 +24,7 @@ bottom of the page.
    submit/assembly
    submit/sequence
    submit/analyses
+   submit/annotation
 
 .. toctree::
    :caption: ENA Data Discovery & Retrieval
@@ -53,14 +54,16 @@ bottom of the page.
    faq/taxonomy
    faq/taxonomy_requests
    faq/metagenomes
-   faq/missing-values
+   submit/samples/missing-values
    faq/locus_tags
    faq/archive-generated-files
    faq/archive-generated-analysis-files
-   faq/analysis-and-accessions.rst
+   faq/analysis-and-accessions
    faq/third_party_tools
    faq/data_brokering
    faq/orcid-claiming
+   faq/umbrella
+   faq/pathogen-subs-guide
 
 
 Introductory Webinar

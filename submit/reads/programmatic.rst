@@ -102,20 +102,15 @@ fields. Even if you are not a member of one of these you can still use them as a
 the quality of annotation of your experiment (and run) objects towards more interpretable and reproducible
 publications.
 
-.. toctree::
-   :maxdepth: 3
-
-   exp_01
-
 Supported data formats
 ======================
 
-Please see `Read Data Formats <../fileprep/reads.html>`_.
+Please see :doc:`Read Data Formats </submit/fileprep/reads>`.
 
 Upload data files
 =================
 
-Please see `Data Upload <../fileprep/upload.html>`_.
+Please see :doc:`Data Upload </submit/fileprep/upload>`.
 
 You must have uploaded data files into your Webin upload area before you can
 submit them using a run XML. Once the run has been submitted the data files
@@ -466,7 +461,7 @@ The submission XML declares one or more Webin submission service actions.
 In this case the action is `<ADD/>` which is used to submit new objects.
 
 The XMLs can be submitted programmatically, using CURL on command line or
-using the `Webin Portal <../general-guide/submissions-portal.html>`_.
+using the :doc:`Webin Portal </submit/general-guide/submissions-portal>`.
 
 Submit the XMLs using CURL
 ==========================
@@ -499,8 +494,8 @@ After running the command above a receipt XML is returned. It will look like the
 Submit the XMLs using Webin Portal
 ==================================================
 
-XMLs can also be submitted interactively using the `Webin Portal <../general-guide/submissions-portal.html>`_.
-Please refer to the `Webin Portal <../general-guide/submissions-portal.html>`_ document for an example how
+XMLs can also be submitted interactively using the :doc:`Webin Portal </submit/general-guide/submissions-portal>`.
+Please refer to the :doc:`Webin Portal </submit/general-guide/submissions-portal>` document for an example how
 to submit a study using XML. Other types of XMLs can be submitted using the same approach.
 
 The Receipt XML
@@ -535,5 +530,5 @@ but this time using the production service. Simply change the part in the URL fr
 
     curl -u username:password -F "SUBMISSION=@submission.xml" -F "EXPERIMENT=@experiment.xml" -F "RUN=@run.xml" "https://www.ebi.ac.uk/ena/submit/drop-box/submit/"
 
-Similarly, if you are using the `Webin Portal <../general-guide/submissions-portal.html>`_ change the URL from
+Similarly, if you are using the :doc:`Webin Portal </submit/general-guide/submissions-portal>` change the URL from
 `wwwdev.ebi.ac.uk` to `www.ebi.ac.uk`.

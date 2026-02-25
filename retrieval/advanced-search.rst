@@ -263,5 +263,5 @@ Rulespace
 =========
 
 Rulespace is a tool which allows you save your searches, give them names, rerun
-them and share them with other people. Learn more about it in the `Rulespace
-Guide <advanced-search/rulespace.html>`_.
+them and share them with other people. Learn more about it in the :doc:`Rulespace
+Guide </retrieval/advanced-search/rulespace>`.

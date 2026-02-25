@@ -289,8 +289,7 @@ value for each file submitted to the archive. We will re-compute and verify the
 MD5 checksum to make sure that the file transfer was completed without any
 changes to the file contents.
 
-Calculating this value is covered in `Preparing A File For Upload
-<preparation.html>`_.
+Calculating this value is covered in :doc:`Preparing A File For Upload </submit/fileprep/preparation>`.
 
 
 Invalid File Submissions
@@ -299,8 +298,7 @@ Invalid File Submissions
 All files are subjected to a format check done by Webin. This does not occur
 until after you formally submit the files. You will generally be notified of
 this by email, and may be required to correct and reupload the file.
-Advice on this can be found in our `Common Run Submission Errors FAQ
-<../../faq/runs.html>`_
+Advice on this can be found in our :doc:`Common Run Submission Errors FAQ </faq/runs>`
 
 
 Fair Use Policy

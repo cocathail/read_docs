@@ -39,7 +39,7 @@ data validation capability built in and is able to flag up errors in your data b
 Because of this, Webin-CLI is recommended for all circumstances in which it is an option.
 
 For a summary of what can be submitted through each interface, as well as what these interfaces are, please refer to the
-table in the `General Guide on ENA Data Submission <../general-guide.html>`_.
+table in the :doc:`General Guide on ENA Data Submission </submit/general-guide>`.
 
 
 Submission

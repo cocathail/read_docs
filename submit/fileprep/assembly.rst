@@ -51,7 +51,7 @@ Ensure the sequence contains only valid nucleotide characters and no whitespace 
 Flat File
 =========
 
-Annotated sequences can only be submitted in the `EMBL flat file format <./flat-file-example.html>`_.
+Annotated sequences can only be submitted in the :doc:`EMBL flat file format </submit/fileprep/flat-file-example>`.
 For the full range of features and qualifiers available for flat files and their expected content, please see
 `WebFeat <https://www.ebi.ac.uk/ena/WebFeat/>`_.  The complete flatfile manual is available `here <https://raw.githubusercontent.com/enasequence/read_docs/master/submit/fileprep/flatfile_user_manual.txt>`_.
 

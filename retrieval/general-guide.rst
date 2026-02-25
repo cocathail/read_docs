@@ -68,7 +68,7 @@ ENA Project in the browser:
 .. _`ERC000013`: https://www.ebi.ac.uk/ena/browser/view/ERC000013
 
 \* Assembled and annotated sequence records fall into different data classes. Read 
-more about the different classes of sequences `here <./general-guide/data-classes.html>`_.
+more about the different classes of sequences :doc:`here </retrieval/general-guide/data-classes>`.
 
 Search and Retrieval
 ====================

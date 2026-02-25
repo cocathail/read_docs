@@ -21,6 +21,8 @@ Where multiple experiments were performed on the same sample, this should still 
 the experimental details will be logged separately.
 
 
+.. _sample-checklists:
+
 Checklists
 ----------
 
@@ -42,10 +44,14 @@ metadata possible.
 
 If you can not find a suitable checklist for your sample data type - please first contact our
 `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ for advice.
-Please only use the **ENA default sample** checklist if you have been advised that there are no other suitable options.
+
+.. warning::
+
+   Please only use the **ENA default sample** checklist if you have been advised that there are no other
+   suitable options.
 
 If you cannot provide a value for a mandatory field within a checklist, please use one of the
-`INDSC accepted terms <samples/missing-values.html>`_ for missing value reporting.
+:doc:`INDSC accepted terms </submit/samples/missing-values>` for missing value reporting.
 
 .. note::
    From January 2025, the sample validation service will be replaced by validation via the `BioSamples Database (BSD) <https://www.ebi.ac.uk/biosamples/>`_.
@@ -53,20 +59,24 @@ If you cannot provide a value for a mandatory field within a checklist, please u
    `summary table here <samples/sample_checklist/sample_checklist_errors.md>`_ for the changes in the validation messages.
    Samples will still be accessible via the ENA Browser and API.
 
+.. _sample-taxonomy:
+
 Taxonomy
 --------
 
 The most fundamental attribute to any sample is its taxonomic classification.
 This must be a species-rank taxon from the NCBI Taxonomy database. Samples that are being registered for
-non-environmental assemblies must have a `binomial <../faq/taxonomy.rst#checking-a-taxon-is-binomial>`_ scientific name. Please also make sure you are familiar with
-the `ENA's taxonomy services <../faq/taxonomy.html>`_ and use the correct taxonomy to describe your samples.
+non-environmental assemblies must have a :ref:`binomial <taxonomy-binomial>` scientific name. Please also make sure you are familiar with
+the :doc:`ENA's taxonomy services </faq/taxonomy>` and use the correct taxonomy to describe your samples.
 
-In particular, consider the `environmental taxonomy <../faq/taxonomy.html#environmental-taxonomic-classifications>`_
+In particular, consider the :ref:`environmental taxonomy <environmental-taxonomy>`
 options available to you when working with environmental samples.
 
 If no appropriate taxon exists in the taxonomy database you can request the addition of one by creating a
-`taxonomy request <../faq/taxonomy_requests.html>`_.
+:doc:`taxonomy request </faq/taxonomy_requests>`.
 
+
+.. _sample-accessions:
 
 Accessions
 ----------
@@ -85,7 +95,7 @@ Submission Options
 ==================
 
 Samples can be submitted one of two ways, using the Webin Portal interface or the programmatic interface.
-For an overview of these, please see the `General Guide on Submitting to ENA <general-guide.html>`_.
+For an overview of these, please see the :doc:`General Guide on Submitting to ENA </submit/general-guide>`.
 Find specific advice on registering studies using your preferred method below:
 
 .. toctree::

@@ -19,15 +19,15 @@ location on an FTP server.
 The **experiment** submission holds metadata that describe the methods used to sequence the sample.
 
 If you are not yet familiar with the metadata model, please see 
-`here <general-guide/metadata.html>`_ for some more information.
+:doc:`here </submit/general-guide/metadata>` for some more information.
 
 As a raw read submission references ENA sample and study objects, you must submit these before you can submit your read
 data.
 See below for information on how to register a study within ENA to describe your project and samples with information on
 the biological material which was sequenced:
    
-- `Register a study <study.html>`_
-- `Register a sample <samples.html>`_
+- :doc:`Register a study </submit/study>`
+- :doc:`Register a sample </submit/samples>`
 
 Accessions
 ==========
@@ -39,6 +39,8 @@ The other starts with ERX and is called the Experiment accession.
 Always make a note of any accessions you receive as these are the unique identifiers for each of your submissions to
 ENA.
 You can always review your read submissions within the interactive submission interface.
+
+.. _read-submission-methods:
 
 Submission Options
 ==================
@@ -52,7 +54,7 @@ Reads can be submitted in any of three ways.
    reads/webin-cli
    reads/programmatic
 
-For an overview of these, please see the `General Guide on Submitting to ENA <general-guide.html>`_.
+For an overview of these, please see the :doc:`General Guide on Submitting to ENA </submit/general-guide>`.
 
 .. note::
 

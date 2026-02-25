@@ -7,9 +7,9 @@ Introduction
 ============
 
 
-Submission of targeted sequences may be done using `Webin-CLI <../general-guide/webin-cli.html>`_ as described in this
-page's parent page: `How to Submit Targeted Sequences <../sequence.html>`_.
-The native format for annotated sequences in ENA is the `EMBL flat file format <../fileprep/flat-file-example.html>`_.
+Submission of targeted sequences may be done using :doc:`Webin-CLI </submit/general-guide/webin-cli>` as described in this
+page's parent page: :doc:`How to Submit Targeted Sequences </submit/sequence>`.
+The native format for annotated sequences in ENA is the :doc:`EMBL flat file format </submit/fileprep/flat-file-example>`.
 You may prepare your annotated targeted sequences in this format and submit them directly to us, subject to them passing
 validation.
 
@@ -21,7 +21,7 @@ Tips On Preparing Your File
 ===========================
 
 
-If you are not familiar, please see an example of the `EMBL flat file format <../fileprep/flat-file-example.html>`_.
+If you are not familiar, please see an example of the :doc:`EMBL flat file format </submit/fileprep/flat-file-example>`.
 When you have completed your file, you must compress it with GZIP or BZIP2.
 
 
@@ -50,7 +50,7 @@ When preparing a flat file using the above example, note a few things:
 
   - This must include one /organism qualifier which must match with the scientific name of a species-rank taxon in the
     NCBI Taxonomy database
-  - See `tips for sample taxonomy <../../faq/taxonomy.html>`_ for help with how to identify an appropriate name
+  - See :doc:`tips for sample taxonomy </faq/taxonomy>` for help with how to identify an appropriate name
 
 - A flat file may contain multiple sequence records, which should be separated within the file by a single line which
   contains only ``//``
@@ -61,9 +61,9 @@ Flat File Preparation Resources
 
 
 There are various tools which can help you with the preparation of your flat file, some of which are listed in our
-`Third Party Tools page <../../faq/third_party_tools.html>`_.
+:doc:`Third Party Tools page </faq/third_party_tools>`.
 
-`Entry Upload Templates <../fileprep/sequence_flatfile.html>`_
+:doc:`Entry Upload Templates </submit/fileprep/sequence_flatfile>`
   Some flat file templates are provided at the linked page which may help with the preparation of your submissions.
   These are different from the spreadsheet-based templates available from the Webin Portal, described
   elsewhere in this documentation, as these ones still require you to prepare your sequence records in flat file format.
@@ -72,7 +72,7 @@ There are various tools which can help you with the preparation of your flat fil
   This is where we provide a comprehensive directory of the available features and qualifiers you may use in your
   flat files, as well as information on how they should be used.
 
-`Webin-CLI Validator <../sequence.html>`_
+:doc:`Webin-CLI Validator </submit/sequence>`
   When you submit your flat file you will do so via Webin-CLI.
   The above links back to the parent of this page which describes submission of flat files via Webin-CLI.
   This tool includes a validation mode able to point out errors in your file which would prevent it from being
@@ -83,9 +83,9 @@ There are various tools which can help you with the preparation of your flat fil
 `EMBLmyGFF3 <https://github.com/NBISweden/EMBLmyGFF3>`_
   If you have your annotation in GFF3 format already, this tool created by staff at NBI Sweden can be used to convert
   to EMBL flat file format.
-  Read more in the `Third Party Tools page <../../faq/third_party_tools.html>`_.
+  Read more in the :doc:`Third Party Tools page </faq/third_party_tools>`.
 
 `annonex2embl <https://github.com/michaelgruenstaeudl/annonex2embl>`_
   For multiple sequence alignments in NEXUS format with annotation, this tool is available for conversion to
   EMBL flat file format.
-  Read more in the `Third Party Tools page <../../faq/third_party_tools.html>`_.
+  Read more in the :doc:`Third Party Tools page </faq/third_party_tools>`.

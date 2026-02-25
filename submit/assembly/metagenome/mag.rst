@@ -29,14 +29,14 @@ It is recommended that for all MAG submissions, all lower level assemblies are s
 submission can be used to highlight the best and most representative derived assemblies from a binned metagenome set
 and ensures the methods used to derive your MAG are reproducible.
 
-- `Submitting A Primary Metagenome Assembly <primary.html>`_
-- `Submitting Binned Metagenome Assemblies <binned.html>`_
+- :doc:`Submitting A Primary Metagenome Assembly </submit/assembly/metagenome/primary>`
+- :doc:`Submitting Binned Metagenome Assemblies </submit/assembly/metagenome/binned>`
 
 Introduction
 ============
 
 Metagenome assemblies can be submitted to the European Nucleotide Archive (ENA) using the
-`Webin command line submission interface <../../general-guide/webin-cli.html>`_ with ``-context genome``.
+:doc:`Webin command line submission interface </submit/general-guide/webin-cli>` with ``-context genome``.
 
 Please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ if you intend to submit an assembly
 assembled from third party data.
@@ -81,14 +81,14 @@ Genome assemblies except primary metagenomes are uniquely associated with a stud
 If you have not done so already, please register a study. If you intend to submit your MAG with annotation, make
 sure to register locus tag prefixes during this stage.
 
-- `Register a Study <../../study.html>`_
+- :doc:`Register a Study </submit/study>`
 
 It is recommended to also submit all lower level metagenomic assemblies and raw reads before submitting MAGs to help
 record your methods and make your data reproducible.
 
-- `Submitting Raw Reads <../../reads.html>`_
-- `Submitting A Primary Metagenome Assembly <primary.html>`_
-- `Submitting Binned Metagenome Assemblies <binned.html>`_
+- :doc:`Submitting Raw Reads </submit/reads>`
+- :doc:`Submitting A Primary Metagenome Assembly </submit/assembly/metagenome/primary>`
+- :doc:`Submitting Binned Metagenome Assemblies </submit/assembly/metagenome/binned>`
 
 Registering MAG samples
 -----------------------
@@ -100,7 +100,7 @@ hold all metadata related to the taxonomy of that subset as well as methods used
 
 .. image:: ../../images/metadata_model_derivedanalysis.png
 
-**MAG** samples should be as `specific in taxonomy <../../../faq/taxonomy.html#environmental-organism-level-taxonomy>`_
+**MAG** samples should be as :ref:`specific in taxonomy <organism-level-taxonomy>`
 as they can be and use the specific `GSC MIMAGS <https://www.ebi.ac.uk/ena/browser/view/ERC000047>`_ checklist.
 
 Please make sure these **MAG** samples correctly reference the sample they were derived from, e.g. a **binned**
@@ -121,15 +121,15 @@ You should also reference the source sample in the description:
    and reference this within your **MAG** sample.
    Registering an **environmental** sample follows the same method as regular sample registration.
    Make sure to use the most appropriate environmental checklist and an
-   `environmental taxon <../../faq/taxonomy.html#environmental-biome-level-taxonomy>`_ (e.g. aquatic metagenome (tax id: 1169740)).
-   Please also see `here <../../faq/metagenomes.html#how-do-i-submit-metagenome-assemblies-without-raw-data-or-primary-assemblies-to-point-to>`_
+   :ref:`environmental taxon <biome-level-taxonomy>` (e.g. aquatic metagenome (tax id: 1169740)).
+   Please also see :doc:`here </faq/metagenomes>`
    for details on how to release these samples. If no data is associated with the **environmental** sample, it needs to be
    released manually in order to be available to the public.
 
 The methods for submitting metagenomic samples follow the same process as any other sample submission.
 Follow the links for more information.
 
-- `Register a Sample <../../samples.html>`_
+- :doc:`Register a Sample </submit/samples>`
 
 Stage 2: Prepare the files
 ==========================
@@ -149,7 +149,7 @@ Contig assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../../fileprep/assembly.html#flat-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
 
 This assembly level only requires information on the sequences and annotation (if any).
 
@@ -165,9 +165,9 @@ Chromosome assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../../fileprep/assembly.html#flat-file>`_
-- 1 `chromosome list file <../../fileprep/assembly.html#chromosome-list-file>`_
-- 0-1 `unlocalised list files <../../fileprep/assembly.html#unlocalised-list-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
+- 1 :doc:`chromosome list file </submit/fileprep/assembly>`
+- 0-1 :doc:`unlocalised list files </submit/fileprep/assembly>`
 
 This assembly level allows the submission of fully assembled chromosomes (including organelles, plasmids, and viral
 segments). This requires information on the sequences and annotation (if any) and submission of a chromosome list file
@@ -211,7 +211,7 @@ Please see further below for validation rules affecting some of these fields.
 The following file name fields are supported in the manifest file:
 
 - FASTA: sequences in fasta format
-- FLATFILE: sequences in `EMBL-Bank flat file format <../../fileprep/flat-file-example.html>`_
+- FLATFILE: sequences in :doc:`EMBL-Bank flat file format </submit/fileprep/flat-file-example>`
 - AGP: sequences in `AGP format <https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/>`_
 - CHROMOSOME_LIST: list of chromosomes
 
@@ -235,9 +235,8 @@ For example, the following manifest file represents a MAG consisting of contigs 
 Stage 3: Validate and submit the files
 ======================================
 
-Files are validated, uploaded and submitted using the `Webin command line submission interface
-<../../general-guide/webin-cli.html>`_ (Webin-CLI).
-Please refer to the `Webin command line submission interface <../../general-guide/webin-cli.html>`_ documentation for full
+Files are validated, uploaded and submitted using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` (Webin-CLI).
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation for full
 information about the submission process.
 
 Brief examples of Webin-CLI commands follow.
@@ -267,8 +266,7 @@ assigned accession number (see below) being reported at your command line.
 Meanwhile, a failed validation will provide direction to a report file where you can find a list of error messages
 explaining the reason for the failure, which you can address before re-attempting.
 
-For more information on how to install and use Webin-CLI, please refer to the `Webin-CLI Submission
-<../../general-guide/webin-cli.html>`_ page.
+For more information on how to install and use Webin-CLI, please refer to the :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>` page.
 
 
 Assigned accession numbers
@@ -280,8 +278,7 @@ returned to the submitter by the Webin command line submission interface (Webin-
 ERZ accessions **should not** be used to reference the assembly in publications.
 The purpose of the ERZ accession number is for the submitter to be able to refer to their submission within the Webin
 submission service. For example, the submitter can retrieve the assigned genome assembly and sequence accessions from
-the `Webin Portal <../../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../../general-guide/reports-service.html>`_ using the ERZ accession number.
+the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>` using the ERZ accession number.
 This accession should be used to refer to the assembly in any conversations with helpdesk staff.
 
 For metagenome assemblies, long term stable accession numbers that can be used in publications are:
@@ -292,8 +289,8 @@ For metagenome assemblies, long term stable accession numbers that can be used i
 - Sequence accession(s) assigned once the assembly has been fully processed by ENA.
 
 Submitters can retrieve the genome and sequence accession numbers from the
-`Webin Portal <../../general-guide/submissions-portal.html>`_ or from the
-`Webin reports service <../../general-guide/reports-service.html>`_.
+:doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the
+:doc:`Webin reports service </submit/general-guide/reports-service>`.
 These accession numbers are also sent to the submitters by e-mail.
 
 

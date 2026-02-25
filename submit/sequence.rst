@@ -11,8 +11,8 @@ Introduction
 
 The information on this page pertains to the submission of targeted sequences, typically short assembled and annotated
 sequences representing interesting features or gene regions.
-This is unrelated to the submission of genome assemblies annotated or otherwise, which is described in our `Assembly
-Submission Pages <assembly.html>`_.
+This is unrelated to the submission of genome assemblies annotated or otherwise, which is described in our :doc:`Assembly
+Submission Pages </submit/assembly>`.
 Submissions of this type very rarely exceed a few hundred individual sequences, and usually contain substantially less
 than this.
 Please do not use the information given here to submit thousands of sequences without prior approval as there may be a
@@ -30,17 +30,16 @@ Instead, specific sequence accessions are assigned later, and these are what sho
 Sequence submission requires that a study be registered first.
 Please do this before attempting any of the guides shown below:
 
-- `Register a Study <study.html>`_
+- :doc:`Register a Study </submit/study>`
 
 There is also an option to link sequences to sample accessions in annotation checklists if preferred. However, this is
 not mandatory.
 
-- `Register a Sample <sample.html>`_
+- :doc:`Register a Sample </submit/sample>`
 
 .. note::
    This submission route is for sets of stand-alone targeted assembled and annotated sequences only.
-   If you intend to submit an annotated **assembly** such as a genome, please follow the `assembly submission guidelines
-   <assembly.html>`_ and submit your assembly in EMBL flat file format.
+   If you intend to submit an annotated **assembly** such as a genome, please follow the :doc:`assembly submission guidelines </submit/assembly>` and submit your assembly in EMBL flat file format.
 
 
 .. _Accessions:
@@ -51,16 +50,19 @@ Accessions
 
 As all sequences in ENA are submitted as 'analyses', for each sequence set submission, you will receive a unique
 analysis accession number that starts with ERZ.
-This accession number is for internal processing only and will not be visible in the browser so do not reference
-this number in publications, etc.
-Furthermore, if your submission includes multiple sequences, the ERZ accession will not be unique to any one of them.
+
+.. warning::
+
+   This ERZ accession is for internal processing only and will not be visible in the browser.
+   Do not reference this number in publications.
+   If your submission includes multiple sequences, the ERZ accession will not be unique to any one of them.
+
 Instead, you will receive additional post-processing accession numbers for your sequences via email, each of which will
 be unique to one of your sequences. You may also link sample accessions to your sequences if needed.
 
 Always make a note of any accessions you receive as these are the unique identifiers for each of your submissions to
 ENA.
-You can use the ERZ accession to retrieve the assigned sequence accessions from the `Webin Portal
-</general-guide/webin-cli.html>`_ or the `Webin Reports Service </general-guide/reports-service.html>`_.
+You can use the ERZ accession to retrieve the assigned sequence accessions from the :doc:`Webin Portal </submit/general-guide/webin-cli>` or the :doc:`Webin Reports Service </submit/general-guide/reports-service>`.
 
 
 .. _Submission Options:
@@ -70,7 +72,7 @@ Submission Options
 
 
 There are two ways in which targeted sequences can be submitted: all targeted sequences can be submitted in the
-`EMBL flat file format </fileprep/flat-file-example.html>`_.
+:doc:`EMBL flat file format </submit/fileprep/flat-file-example>`.
 Alternatively, for commonly submitted types of sequence there are checklists which can be used for submission instead.
 In checklist-based submission, you provide a spreadsheet of pre-defined attributes for each sequence, and our pipeline
 automatically creates flat files based on these.
@@ -78,7 +80,7 @@ automatically creates flat files based on these.
 Annotation checklists provide greater ease of use, but may give you less control over your submissions.
 Browse the available checklists at the below page to see if one meets your needs before proceeding:
 
-- `List of Annotation Checklists <sequence/annotation-checklists.html>`_
+- :doc:`List of Annotation Checklists </submit/sequence/annotation-checklists>`
 
 Whether you submit with a flat file or a checklist spreadsheet, the actual submission is much the same and it is only
 the preparation of these files which differs significantly.
@@ -110,7 +112,7 @@ To complete you submission you will need:
 
 In addition, you will need to have our Webin-CLI tool available on the machine from which you will submit your data.
 For information on what this tool is and how to get started with it, including an instructional video for Windows
-users, please refer to the `Webin-CLI general guide </general-guide/webin-cli.html>`_.
+users, please refer to the :doc:`Webin-CLI general guide </submit/general-guide/webin-cli>`.
 The linked page provides extensive detail on Webin-CLI and its use, but the information below should be enough to
 complete your submission provided you are already able to run Webin-CLI.
 
@@ -157,7 +159,7 @@ Step 2: Validate And Submit Files
 _________________________________
 
 Once you have successfully prepared your manifest file, you should be prepared to complete your submission.
-Please refer to the `Webin-CLI general guide </general-guide/webin-cli.html>`_ if you do not have this program set up.
+Please refer to the :doc:`Webin-CLI general guide </submit/general-guide/webin-cli>` if you do not have this program set up.
 
 Webin-CLI has 'submission' and 'validation-only' modes.
 Both of these will run the full validation suite on your submission, but only the submission mode will submit your file.
@@ -187,5 +189,5 @@ After your sequences have been processed, you will be sent the assigned sequence
 files by email.
 Refer to the `Accessions`_ section above for an explanation of these.
 
-See `Webin Portal Reports <../general-guide/submissions-portal.html>`_ for advice on retrieving information
+See :doc:`Webin Portal Reports </general-guide/submissions-portal>` for advice on retrieving information
 about these submissions.

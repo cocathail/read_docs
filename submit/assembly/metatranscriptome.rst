@@ -14,7 +14,7 @@ Introduction
 ============
 
 Metatranscriptome assemblies can be submitted to the European Nucleotide Archive (ENA) using the
-`Webin command line submission interface <../general-guide/webin-cli.html>`_  with ``-context transcriptome`` option.
+:doc:`Webin command line submission interface </submit/general-guide/webin-cli>`  with ``-context transcriptome`` option.
 
 A metatranscriptome assembly consists of:
 
@@ -49,9 +49,9 @@ Follow the links for more information.
 
 Instructions for interactive submitters:
 
-- `Register a Study <../study.html>`_
-- `Register a Sample <../samples.html>`_
-- `Submit Read Data <../reads.html>`_
+- :doc:`Register a Study </submit/study>`
+- :doc:`Register a Sample </submit/samples>`
+- :doc:`Submit Read Data </submit/reads>`
 
 
 Stage 2: Prepare the files
@@ -63,7 +63,7 @@ The manifest file is specified using the ``-manifest <filename>`` option.
 A transcriptome assembly submission consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
 
 Transcriptome assemblies should be of a high enough quality to fulfil the following criteria:
 
@@ -99,7 +99,7 @@ The following metadata fields are supported in the manifest file:
 The following file name fields are supported in the manifest file:
 
 - FASTA: sequences in fasta format
-- FLATFILE: sequences in `EMBL-Bank flat file format <../fileprep/flat-file-example.html>`_
+- FLATFILE: sequences in :doc:`EMBL-Bank flat file format </submit/fileprep/flat-file-example>`
 
 For example, the following manifest file represents a metatranscriptome assembly provided in one fasta file:
 
@@ -138,8 +138,8 @@ Stage 3: Validate and submit the files
 ======================================
 
 Files are validated, uploaded and submitted using the
-`Webin command line submission interface (Webin-CLI) <../general-guide/webin-cli.html>`_.
-Please refer to the `Webin command line submission interface <../general-guide/webin-cli.html>`_ documentation
+:doc:`Webin command line submission interface (Webin-CLI) </submit/general-guide/webin-cli>`.
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation
 for more information about the submission process.
 
 
@@ -152,8 +152,7 @@ returned to the submitter by the Webin command line submission interface (Webin-
 ERZ accessions **should not** be used to reference the assembly in publications.
 The purpose of the ERZ accession number is for the submitter to be able to refer to their submission within the Webin
 submission service. For example, the submitter can retrieve the assigned genome assembly and sequence accessions from
-the `Webin Portal <../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../general-guide/reports-service.html>`_ using the ERZ accession number.
+the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>` using the ERZ accession number.
 This accession should be used to refer to the assembly in any conversations with helpdesk staff.
 
 For transcriptome assemblies, long term stable accession numbers that can be used in publications are:
@@ -162,9 +161,7 @@ For transcriptome assemblies, long term stable accession numbers that can be use
 - Sample accession (SAMEAxxxxxx) assigned at time of study registration
 - Sequence accession(s) assigned once the genome assembly submission has been fully processed by ENA
 
-Submitters can retrieve the genome and sequence accession numbers from the `Webin Portal
-<../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../general-guide/reports-service.html>`_.
+Submitters can retrieve the genome and sequence accession numbers from the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>`.
 These accession numbers are also sent to the submitters by e-mail.
 
 See an example of a publicly available metatranscriptome TSA at:

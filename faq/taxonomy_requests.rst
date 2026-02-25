@@ -28,7 +28,7 @@ which differentiates the sequenced organism from another.
 For example, unidentified strains of the same bacterial genus should be kept as separate species, rather than binned
 together under the same genus name.
 
-To check for the availability of a name, please refer to the advice in the `Tips for Sample Taxonomy <taxonomy.html>`_
+To check for the availability of a name, please refer to the advice in the :doc:`Tips for Sample Taxonomy </faq/taxonomy>`
 section.
 
 If the name is not already available, you will need to request its addition, the process for which is described below.
@@ -171,7 +171,7 @@ Environmental Samples
 ---------------------
 
 
-If you are submitting a metagenomic sample (e.g. for metagenomic reads) there are numerous `metagenomic taxa <taxonomy.html#environmental-biome-level-taxonomy>`_.
+If you are submitting a metagenomic sample (e.g. for metagenomic reads) there are numerous :ref:`metagenomic taxa <biome-level-taxonomy>`.
 Use the most appropriate environmental name for your metagenome.
 
 New names under this `node <https://www.ebi.ac.uk/ena/browser/view/Taxon:408169?show=tax-tree>`_ are added only rarely and you should use the closest available choice.

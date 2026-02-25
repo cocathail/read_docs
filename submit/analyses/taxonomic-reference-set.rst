@@ -22,11 +22,9 @@ The format has three components:
 The three components together comprise a Taxonomic Reference Set. The format
 of each item is described in detail below.
 
-Before you can submit a Taxonomic Reference Set, you must `register a study
-<../study/interactive.html>`_.
+Before you can submit a Taxonomic Reference Set, you must :doc:`register a study </submit/study/interactive>`.
 
-This analysis class can only be submitted through our `Webin-CLI tool
-<../general-guide/webin-cli.html>`_.
+This analysis class can only be submitted through our :doc:`Webin-CLI tool </submit/general-guide/webin-cli>`.
 
 This page will describe each of the three components of a taxonomic reference
 set, and then provide instruction on how to submit this analysis type.
@@ -155,7 +153,7 @@ Submitting The Files
 ====================
 
 The files must be submitted using Webin-CLI. For an introduction to this tool
-please `click here <../general-guide/webin-cli.html>`_.
+please :doc:`click here </submit/general-guide/webin-cli>`.
 
 Webin-CLI includes ``-test`` and ``-validate`` options. ``-validate`` may be
 used to have the Webin-CLI validator run check your files without submitting.

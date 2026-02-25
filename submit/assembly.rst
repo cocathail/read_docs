@@ -17,18 +17,23 @@ Within ENA, all assemblies are submitted as 'analysis' submission objects but ar
 differently depending on what type of assembly is submitted.
 
 If you are not yet familiar with the metadata model, please see 
-`here <general-guide/metadata.html>`_ for some more information.
+:doc:`here </submit/general-guide/metadata>` for some more information.
 
 As an assembly references ENA sample and study objects, you must submit these before you
-submit your data. It is also strongly recommended to submit as well as reference any reads associated with the assembly being submitted.
+submit your data.
+
+.. tip::
+
+   It is also strongly recommended to submit as well as reference any reads associated
+   with the assembly being submitted.
 
 See below for information on how to: register a study within ENA to describe your overall research project,
 register samples with information on the biological material that was sequenced then assembled, and submit any reads
 associated with each sample being submitted.
    
-- `Register a study <study.html>`_
-- `Register a sample <samples.html>`_
-- `Submit raw reads <reads.html>`_
+- :doc:`Register a study </submit/study>`
+- :doc:`Register a sample </submit/samples>`
+- :doc:`Submit raw reads </submit/reads>`
 
 
 Assembly Levels
@@ -45,14 +50,19 @@ An assembly may contain a mixture of the three sequence types:
 - **Scaffold:** the highest level of assembly consists of gapped contigs (scaffolds)
 - **Chromosome:** the highest level of assembly includes assembled chromosomes
 
-Note that 'chromosome' should here be understood as a general term for a range of complete replicons, including
-chromosomes of eukaryotes, prokaryotes, and viruses, as well as organellar chromosomes and plasmids.
-All of these may be submitted within the same chromosome-level assembly.
+.. note::
+
+   'Chromosome' should here be understood as a general term for a range of complete replicons, including
+   chromosomes of eukaryotes, prokaryotes, and viruses, as well as organellar chromosomes and plasmids.
+   All of these may be submitted within the same chromosome-level assembly.
 
 Please also note that contig and scaffold level assemblies can both be updated to higher level assemblies after
 submission.
-You cannot update to a lower level assembly, however, and you cannot add functional annotation if none was present
-in the first submission.
+
+.. warning::
+
+   You cannot update to a lower level assembly, and you cannot add functional annotation if none was present
+   in the first submission.
 
 
 Files For Genome Assembly Submissions
@@ -112,7 +122,7 @@ Always make a note of any accessions you receive as these are the unique identif
 your submissions to ENA.
 
 The ERZ accession can be used to access information on the progress of the internal processing of each assembly through
-the `Webin Portal <general-guide/submissions-portal.html>`_.
+the :doc:`Webin Portal </submit/general-guide/submissions-portal>`.
 You can also use this service to see the assigned chromosome, contig, and scaffold accessions.
 Please follow the Webin Portal link to learn more about this.
 See individual submission guidelines for information on what accessions you will receive for
@@ -129,7 +139,7 @@ Submission Options
 
 Genome and transcriptome assemblies can only be submitted using the 
 Webin-CLI submission interface. For an overview of how to use this, please 
-see the documentation on `Webin-CLI Submission <general-guide/webin-cli.html>`_.
+see the documentation on :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>`.
 
 .. toctree::
    :maxdepth: 1

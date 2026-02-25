@@ -14,7 +14,7 @@ Introduction
 ============
 
 Metagenome assemblies can be submitted to the European Nucleotide Archive (ENA) using the
-`Webin command line submission interface <../../general-guide/webin-cli.html>`_ with ``-context genome``.
+:doc:`Webin command line submission interface </submit/general-guide/webin-cli>` with ``-context genome``.
 
 Please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ if you intend to submit an assembly
 assembled from third party data.
@@ -55,13 +55,13 @@ Each submission must be associated with a pre-registered study and a **binned** 
 
 If you have not done so already, please register a study.
 
-- `Register a Study <../../study.html>`_
+- :doc:`Register a Study </submit/study>`
 
 It is recommended to submit any primary metagenomic assemblies and raw reads before
 submitting your binned metagenomes to help record your methods and make your data reproducible.
 
-- `Submitting Raw Reads <../../reads.html>`_
-- `Submitting A Primary Metagenome Assembly <primary.html>`_
+- :doc:`Submitting Raw Reads </submit/reads>`
+- :doc:`Submitting A Primary Metagenome Assembly </submit/assembly/metagenome/primary>`
 
 Registering binned samples
 --------------------------
@@ -73,7 +73,7 @@ sample and hold all metadata related to the taxonomy of that subset as well as m
 
 .. image:: ../../images/metadata_model_derivedanalysis.png
 
-These **binned** samples should be as `specific in taxonomy <../../../faq/taxonomy.html#environmental-organism-level-taxonomy>`_
+These **binned** samples should be as :ref:`specific in taxonomy <organism-level-taxonomy>`
 as they can be and use the specific `ENA binned metagenome <https://www.ebi.ac.uk/ena/browser/view/ERC000050>`_ checklist.
 
 Please make sure these **binned** samples correctly reference the **environmental** sample that the bin was derived from.
@@ -96,15 +96,15 @@ OR
    please still register an **environmental** sample to show the source of the data and reference this within your **binned** sample.
    Registering an **environmental** sample follows the same method as regular sample registration.
    Make sure to use the most appropriate environmental checklist and an
-   `environmental taxon <../../faq/taxonomy.html#environmental-biome-level-taxonomy>`_ (e.g. aquatic metagenome (tax id: 1169740)).
-   Please also see `here <../../faq/metagenomes.html#how-do-i-submit-metagenome-assemblies-without-raw-data-or-primary-assemblies-to-point-to>`_
+   :ref:`environmental taxon <biome-level-taxonomy>` (e.g. aquatic metagenome (tax id: 1169740)).
+   Please also see :doc:`here </faq/metagenomes>`
    for details on how to release these samples. If no data is associated with the **environmental** sample, it needs to be
    released manually in order to be available to the public.
 
 The methods for submitting metagenomic samples follow the same process as any other sample submission.
 Follow the links for more information.
 
-- `Register a Sample <../../samples.html>`_
+- :doc:`Register a Sample </submit/samples>`
 
 
 Stage 2: Prepare the files
@@ -166,9 +166,8 @@ For example, the following manifest file represents a binned metagenome assembly
 Stage 3: Validate and submit the files
 ======================================
 
-Files are validated, uploaded and submitted using the `Webin command line submission interface
-<../../general-guide/webin-cli.html>`_ (Webin-CLI).
-Please refer to the `Webin command line submission interface <../../general-guide/webin-cli.html>`_ documentation for full
+Files are validated, uploaded and submitted using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` (Webin-CLI).
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation for full
 information about the submission process.
 
 Brief examples of Webin-CLI commands follow.
@@ -198,8 +197,7 @@ assigned accession number (see below) being reported at your command line.
 Meanwhile, a failed validation will provide direction to a report file where you can find a list of error messages
 explaining the reason for the failure, which you can address before re-attempting.
 
-For more information on how to install and use Webin-CLI, please refer to the `Webin-CLI Submission
-<../../general-guide/webin-cli.html>`_ page.
+For more information on how to install and use Webin-CLI, please refer to the :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>` page.
 
 
 Assigned accession numbers
