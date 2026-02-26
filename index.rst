@@ -32,7 +32,6 @@ bottom of the page.
    :maxdepth: 1
 
    retrieval/general-guide
-   retrieval/ena-project
    retrieval/file-download
    retrieval/advanced-search
    retrieval/programmatic-access

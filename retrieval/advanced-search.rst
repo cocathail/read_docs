@@ -76,7 +76,7 @@ Locate all read data submitted for Neanderthals
 
 .. image:: images/advanced-search-4.png
 
-.. _`archive-generated standardised FASTQ format`: ../faq/archive-generated-files.html
+.. _`archive-generated standardised FASTQ format`: /faq/archive-generated-files
 
 
 Find Samples Based On Checklists

@@ -39,8 +39,27 @@ Downloading Files
 
 ENA provides numerous ways to access the data it hosts, suiting a range of
 use-cases and computational ability levels.
-These are described below, ranked from low to high, based on how much
-computational ability might be required:
+Use the table below to choose the most suitable method for your needs:
+
++----------------------------------+------------------------------------------------------------+
+| Method                           | Best suited for                                            |
++==================================+============================================================+
+| ENA Browser                      | One-off manual downloads via a web interface               |
++----------------------------------+------------------------------------------------------------+
+| ENA File Downloader (CLI or GUI) | Accession-based downloads with an interactive interface    |
++----------------------------------+------------------------------------------------------------+
+| Globus                           | Very large datasets requiring reliable, high-speed transfer|
++----------------------------------+------------------------------------------------------------+
+| enaBrowserTools                  | Accession-based bulk downloads from scripts or pipelines   |
++----------------------------------+------------------------------------------------------------+
+| wget / curl                      | Scripted or automated downloads from known FTP URLs        |
++----------------------------------+------------------------------------------------------------+
+| FTP Client                       | Interactively browsing and downloading from the FTP server |
++----------------------------------+------------------------------------------------------------+
+| Aspera / ascli                   | High-speed bulk downloads, especially for large files      |
++----------------------------------+------------------------------------------------------------+
+
+All methods are described in detail below:
 
 - `Using ENA Browser`_
 - `Using ENA File Downloader Command Line Tool`_
@@ -48,6 +67,7 @@ computational ability might be required:
 - `Using Globus`_
 - `Using enaBrowserTools`_
 - `Using wget`_
+- `Using curl`_
 - `Using FTP Client`_
 - `Using Aspera`_
 - `Common Issues`_
@@ -163,16 +183,9 @@ A file can be downloaded with wget simply by specifying its location:
 Using curl
 ----------
 
-curl -o ERR164407.fastq.gz 'ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR164/ERR164407/ERR164407.fastq.gz'
+::
 
-Downloading Private Files
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you want to use curl to download a non-public data file using datahub (dcc) authentication,
-provide the dcc username and password.
-
-e.g.
-curl -u dcc_metagenome:password  -o ERR9463971_2.fastq.gz 'ftp://ftp.dcc-private.ebi.ac.uk/vol1/fastq/ERR946/001/ERR9463971/ERR9463971_2.fastq.gz'
+    curl -o ERR164407.fastq.gz 'ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR164/ERR164407/ERR164407.fastq.gz'
 
 Using FTP Client
 ----------------
@@ -244,22 +257,6 @@ Windows
     "<path_to_aspera_installation>\bin\ascp" -T --mode=recv --host=fasp.sra.ebi.ac.uk -P 33001 --user=era-fasp vol1/fastq/ERR164/ERR164407/ERR164407.fastq.gz <dest_path>
 
 
-Downloading Private Files
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-e.g. If you want to use aspera to download a non-public data file using datahub (dcc) authentication,
-provide the ENA datahub username (dcc_*) instead of era-fasp and you will be prompted for the password.
-(or use environment variable `ASPERA_SCP_PASS`)
-
-::
-
-    ascp -T -l 300m -P 33001 dcc_name@fasp.sra.ebi.ac.uk:/vol1/fastq/ERR327/009/ERR3278169/ERR3278169_1.fastq.gz <dest_path>
-
-    or
-
-    ascp -T -l 300m --mode=recv --host=fasp.sra.ebi.ac.uk -P 33001 --user=dcc_name vol1/fastq/ERR327/009/ERR3278169/ERR3278169_1.fastq.gz <dest_path>
-
-
 Downloading Assembled and Annotated Sequence Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -299,11 +296,6 @@ Then transfer files easily with:
 
 All the command line arguments can also be used at once without configuration file.
 
-For private files, configure like this (and then use '-Pmypriv'):
-
-::
-
-    ascli conf preset update mypriv --url=ssh://fasp.sra.ebi.ac.uk:33001 --username=dcc_name --password=dcc_pass --ts=@json:'{"target_rate_kbps":300000}'
 Common Issues
 -------------
 Downloading a large number of records

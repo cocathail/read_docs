@@ -104,7 +104,7 @@ When working with a large number of records or when developing an automated pipe
 to explore and interact with the programmatic services that ENA has to offer.
 
 Once you are familiar with how ENA records are linked and what data are available associated with each record,
-please explore our more advanced guides foraccessing data from the archive programmatically:
+please explore our more advanced guides for accessing data from the archive programmatically:
 
 .. toctree::
    :maxdepth: 1

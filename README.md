@@ -71,6 +71,18 @@ The page is structured around four common scenarios:
 
 Each scenario lists what is needed, the steps in order, and links through to the relevant existing detail pages. No existing content has been moved or rewritten.
 
+### Retrieval section cleanup (`retrieval/`)
+The data retrieval section has been reorganised for clarity:
+- Removed two "Downloading Private Files" subsections from `retrieval/file-download.rst` (one under the curl method, one under Aspera) — private data access via datahub is not a supported public workflow
+- Removed the ascli private-file configuration example from the Aspera ascli subsection for the same reason
+- Added a "which method should I use?" summary table at the top of the download methods page so users can quickly pick the right tool
+- Added `curl` as a proper list entry (it was missing from the method index despite having its own section)
+- Formatted the bare `curl` command as a proper RST code block
+- Fixed a blank-line formatting gap before the "Common Issues" heading in the ascli section
+- Fixed a typo (`foraccessing` → `for accessing`) in `retrieval/general-guide.rst`
+- Converted a stale raw HTML link in `retrieval/advanced-search.rst` to a proper `:doc:` reference
+- Removed the duplicate `retrieval/ena-project` entry from the top-level `index.rst` toctree (the page is already included via `retrieval/general-guide.rst`)
+
 ## Note on redirects
 One redirect cannot be configured in code and must be set manually in the ReadTheDocs web admin under **Admin → Redirects**:
 - `/faq/missing-values` → `/submit/samples/missing-values`
