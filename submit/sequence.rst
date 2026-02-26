@@ -35,7 +35,7 @@ Please do this before attempting any of the guides shown below:
 There is also an option to link sequences to sample accessions in annotation checklists if preferred. However, this is
 not mandatory.
 
-- :doc:`Register a Sample </submit/sample>`
+- :doc:`Register a Sample </submit/samples>`
 
 .. note::
    This submission route is for sets of stand-alone targeted assembled and annotated sequences only.
@@ -189,5 +189,5 @@ After your sequences have been processed, you will be sent the assigned sequence
 files by email.
 Refer to the `Accessions`_ section above for an explanation of these.
 
-See :doc:`Webin Portal Reports </general-guide/submissions-portal>` for advice on retrieving information
+See :doc:`Webin Portal Reports </submit/general-guide/submissions-portal>` for advice on retrieving information
 about these submissions.

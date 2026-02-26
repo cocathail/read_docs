@@ -16,6 +16,7 @@ bottom of the page.
    :caption: ENA Data Submission
    :maxdepth: 1
 
+   submit/quickstart
    submit/general-guide
    submit/study
    submit/samples
