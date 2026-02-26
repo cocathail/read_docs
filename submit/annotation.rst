@@ -7,6 +7,12 @@ Introduction
 'Curation' has many valid and useful meanings in the realms of the nucleic sequences.
 The below curation is about the metadata, particularly sample level metadata.
 
+If you need to correct or update a record that **you submitted**, please contact the
+`ENA helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ directly — they can assist
+with updating your own studies, samples, sequences, and assemblies.
+If you wish to annotate or improve **any publicly available record** (including those submitted
+by others), use the ELIXIR Clearinghouse described in this section.
+
 Third Party Annotation
 ----------------------
 The ELIXIR Clearinghouse enables extension, correction and improvement of publicly available curations on sample, sequence, run/experiment and study records available in the European Nucleotide Archive (ENA) (and by extension, as the wider International Nucleotide Sequence Database Collaboration (INSDC) databases). The overall aim is to make metadata more FAIR and improve its quality.

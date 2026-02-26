@@ -4,12 +4,12 @@ Register a Study Interactively
 
 To submit data into ENA you must first register a study to contain and manage it.
 Studies (also referred to as projects) can be registered through the
-`Webin Portal <../general-guide/interactive.html>`_.
+:doc:`Webin Portal </submit/general-guide/interactive>`.
 Log in with your Webin credentials and select the 'Register Study' button to bring up the below interface:
 
 .. image:: ../images/wsp_study_registration.png
 
-Fill out the form to describe your study: most of these values can be `edited later <../../update/metadata.html>`_
+Fill out the form to describe your study: most of these values can be :doc:`edited later </update/metadata>`
 if needed.
 This study will eventually be the entry point into your data, so provide a sufficiently detailed abstract that users can
 get a good overview of your work.
@@ -21,7 +21,7 @@ automatically be made public.
 Notification of this will be sent in advance to all email addresses registered with your submission account.
 You can change the release date at any time to make it sooner or later, but once the data becomes public you may not
 make it private again.
-Read more about data publication in our `Data Release Policies FAQ <../../faq/release.html>`_.
+Read more about data publication in our :doc:`Data Release Policies FAQ </faq/release>`.
 
 Once registration is complete, you will be assigned accession numbers.
 You may return to the dashboard and select the 'Studies Report' button to review registered studies.

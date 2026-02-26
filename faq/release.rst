@@ -34,11 +34,14 @@ See further down the page for information on this.
 I Released My Study, Why Can't I Find It In The Public Database?
 ----------------------------------------------------------------
 
-After a study is made public, it can take up to 48 hours for your data to be searchable in the ENA Browser.
-It will take four days for it to be visible in GenBank.
-Please take this into consideration if you have a strict deadline by which your data must be public.
-Note that the processes which are taking place in this time are automated, and we are not able to intervene in order to
-expedite the release of your data.
+.. tip::
+
+   After a study is made public, it can take up to 48 hours for your data to be searchable in the ENA Browser,
+   and four days for it to be visible in GenBank.
+   Please take this into consideration if you have a strict deadline by which your data must be public.
+   Note that the processes which are taking place in this time are automated, and we are not able to intervene in order to
+   expedite the release of your data.
+
 If after 48 hours your data remain private, please contact our
 `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_.
 
@@ -73,9 +76,10 @@ accession(s) to be suppressed. If your study needs to be re-released, you must p
 order to temporarily suppress the study.
 A curator will assess the request and carry it out if deemed suitable.
 Information about circumstances in which suppression will be considered can be found in our
-`Data Availability Policy <release/data-availability-policy.html>`_.
-Please note that data that is made public for even a short time may be used by downstream services which we do not
-control.
+:doc:`Data Availability Policy </faq/release/data-availability-policy>`.
+.. warning::
+
+   Data that is made public for even a short time may be used by downstream services which we do not control.
 
 If your suppression will be temporary, please provide a new release date when you contact us.
 
@@ -84,4 +88,4 @@ Data Availability Policy
 ------------------------
 
 For full details of the INSDC data availability policy including the different levels of controlled access, see
-`here <release/data-availability-policy.html>`_.
+:doc:`here </faq/release/data-availability-policy>`.

@@ -6,13 +6,13 @@ Submit Targeted Sequence Spreadsheets with Webin-CLI
 Introduction
 ============
 
-Submission of targeted sequences may be done using `Webin-CLI <../general-guide/webin-cli.html>`_ as described in this
-page's parent page: `How to Submit Targeted Sequences <../sequence.html>`_.
+Submission of targeted sequences may be done using :doc:`Webin-CLI </submit/general-guide/webin-cli>` as described in this
+page's parent page: :doc:`How to Submit Targeted Sequences </submit/sequence>`.
 As mentioned there, you may prepare your submissions in a spreadsheet format in accordance with a checklist, provided
 that an appropriate checklist exists.
 Please browse the selection of available checklists to determine if this route is correct for you:
 
-- `List of Annotation Checklists <annotation-checklists.html>`_
+- :doc:`List of Annotation Checklists </submit/sequence/annotation-checklists>`
 
 If you are satisfied that there is an appropriate checklist, please read on to learn how you may download and complete a
 template.
@@ -26,7 +26,7 @@ To begin, log in to the `Webin Portal <https://www.ebi.ac.uk/ena/submit/webin/lo
 'Generate Annotated Sequence Spreadsheet' button.
 
 1. You will be presented with a set of checklist groups: select the appropriate one for your submission, by reference to
-   the `List of Annotation Checklists <annotation-checklists.html>`_ if needed
+   the :doc:`List of Annotation Checklists </submit/sequence/annotation-checklists>` if needed
 2. Next, select the actual checklist you intend to use
 
 .. image:: ../images/wsp_sequence_1_select_checklist.png
@@ -60,7 +60,7 @@ Consider the following tips as you complete your spreadsheet:
 - Do not modify the first two lines of the spreadsheet
 - Do not edit the column names
 - The 'Organism' field must match with the scientific name of a species-rank taxon in the NCBI Taxonomy database
-  - See `tips for sample taxonomy <../../faq/taxonomy.html>`_ for help with how to identify an appropriate name
+  - See :doc:`tips for sample taxonomy </faq/taxonomy>` for help with how to identify an appropriate name
   OR
   one of the following can be included instead:
 
@@ -73,5 +73,5 @@ Consider the following tips as you complete your spreadsheet:
 - Before submitting, you must compress your spreadsheet with GZIP or BZIP2
 
 Once you are satisfied with the content of your file and it has been appropriately compressed, return to the page
-`How to Submit Targeted Sequences <../sequence.html>`_ to continue with your submission.
+:doc:`How to Submit Targeted Sequences </submit/sequence>` to continue with your submission.
 

@@ -2,18 +2,20 @@
 Updating Assemblies
 ===================
 
-Updates to assemblies can be performed through `Webin-CLI <../submit/general-guide/webin-cli.html>`_,  and for all except SARS-CoV-2 assemblies*, result in the
+Updates to assemblies can be performed through :doc:`Webin-CLI </submit/general-guide/webin-cli>`, and for all except SARS-CoV-2 assemblies, result in the
 creation of a new version of the assembly.
 
+.. warning::
+
+   To maximise the speed of processing, sequence updates to SARS-CoV-2 assemblies are no longer versioned.
+   This means that any such update will result in completely new sequence and ERZ assembly accessions.
+   In exceptional cases we may be able to maintain versioning for a SARS-CoV-2 sequence.
+   Please contact us via: virus-dataflow@ebi.ac.uk to discuss this.
+
 Updates to assemblies are performed in very similar fashion to submission of assemblies.
-It is therefore sufficient to follow the guidance in the `assembly submission <../submit/assembly.html>`_ pages, while
+It is therefore sufficient to follow the guidance in the :doc:`assembly submission </submit/assembly>` pages, while
 considering the below factors. Note that this information applies only to updating the sequence and annotation, not
-the general assembly metadata.  
-
-
-
-*\*To maximise the speed of processing, sequence updates to SARS-CoV-2 assemblies are no longer versioned. This means that any such update will result in completely new sequence and ERZ assembly accessions.  
-In exceptional cases we may be able to maintain versioning for a SARS-CoV-2 sequence. Please contact us via: virus-dataflow@ebi.ac.uk to discuss this.*
+the general assembly metadata.
 
 
 Study and sample reference must be maintained:
@@ -25,8 +27,13 @@ Study and sample reference must be maintained:
 Chromosome names must be maintained:
   If you are updating a chromosome-level assembly, all chromosomes in the
   original assembly must be present in the updated version, with identical
-  name. Webin-CLI does not currently validate for this and the error will only
-  be caught after submission.
+  name.
+
+  .. warning::
+
+     Webin-CLI does not currently validate for this and the error will only
+     be caught after submission.
+
   If you believe you may have mistakenly submitted an update with a chromosome
   absent or incorrectly named, please contact our
   `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_.
@@ -50,15 +57,17 @@ Annotation status must be maintained:
   maintaining the study and sample, and adding an updated assembly including
   annotation.
 
-  If your assembly did not originally include annotation, it is not possible
-  to update your assembly with annotation.
-  An unannotated assembly can only be updated with new versions of the same
-  unannotated assembly.
-  In order to add annotation to a previously unannotated assembly you need to
-  re-submit the assembly.
-  Note this will result in new accession numbers.
-  You must first contact the `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_
-  to request suppression of the existing assembly version.
+  .. warning::
+
+     If your assembly did not originally include annotation, it is not possible
+     to update your assembly with annotation.
+     An unannotated assembly can only be updated with new versions of the same
+     unannotated assembly.
+     In order to add annotation to a previously unannotated assembly you need to
+     re-submit the assembly.
+     Note this will result in new accession numbers.
+     You must first contact the `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_
+     to request suppression of the existing assembly version.
 
 Both the sequence and annotation may be updated, or just one:
   When updating an annotated assembly, it is not necessary that both the
@@ -88,9 +97,9 @@ Taxonomy changes require our assistance:
   If there is a problem with the taxonomy of your sample, please contact our
   `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_.
   This process will require first that the sample taxonomy be correct, so you
-  are welcome to `update your sample first <metadata/interactive.html>`_.
+  are welcome to :doc:`update your sample first </update/metadata/interactive>`.
   If the taxon you wish to use does not exist in the taxonomy database, you
-  will need to `request its addition <../faq/taxonomy_requests.html>`_.
+  will need to :doc:`request its addition </faq/taxonomy_requests>`.
 
 Contact us for other metadata updates:
   The advice given here pertains to updating the sequence and annotation (if
@@ -101,12 +110,16 @@ Contact us for other metadata updates:
 State of publicity will be the same:
   If the original assembly is already public, then the update will be made
   public as soon as processing is complete.
-  However, please be aware that this process can take some time to complete,
-  and you should allow at least a week after successful submission for your
-  update to be apparent.
 
-Allow 24 hours after original submission:
- Please submit any update at least 24 hours after the original submission, to avoid any issues in processing and delays in publication.
+  .. tip::
+
+     This process can take some time to complete; allow at least a week after
+     successful submission for your update to be apparent.
+
+.. warning::
+
+   Please submit any update at least 24 hours after the original submission,
+   to avoid any issues in processing and delays in publication.
 
 Metagenomic Assemblies:
   Primary and binned metagenome assemblies cannot be updated.

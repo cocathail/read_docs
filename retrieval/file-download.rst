@@ -76,7 +76,7 @@ the data for yourself in this way.
 Once there, you can download any associated files by clicking the relevant
 links.
 For more information on how to explore a record in ENA, please visit our guide
-on `How to Explore an ENA Project <./ena-project.html>`_
+on :doc:`How to Explore an ENA Project </retrieval/ena-project>`
 
 Using ENA File Downloader Command Line Tool
 ---------------------------------------------
@@ -99,8 +99,8 @@ Given an accession, this program will present a list of associated read or analy
 can download.
 Alternatively, you can provide a file report generated from our Advanced Search API (ENA Portal
 API) to perform a bulk download of all files for a given set of criteria.
-Learn more about these APIs from our guide on `How to Access ENA
-Programmatically <./programmatic-access.html>`_.
+Learn more about these APIs from our guide on :doc:`How to Access ENA
+Programmatically </retrieval/programmatic-access>`.
 
 Using Globus
 ------------
@@ -147,8 +147,7 @@ enaBrowserTools is a set of Python-based utilities which can be found `here
 <https://github.com/enasequence/enaBrowserTools/releases>`_.
 These are simple-to-run scripts which allow  accession-based data download
 commands with the option to create more complex commands.
-Read more about this page in the `enaBrowserTools Guide
-<./programmatic-access/browser-tools.html>`_.
+Read more about this page in the :doc:`enaBrowserTools Guide </retrieval/programmatic-access/browser-tools>`.
 
 Using wget
 ----------

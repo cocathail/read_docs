@@ -5,7 +5,7 @@ ENA Webin REST V1
 All 3 existing submission routes, interactive, programmatic (V1) and Webin-CLI, at the ENA use the WEBIN REST version 1 (V1)
 submission service. XML submissions of different types can be made programmatically using the Webin V1 API. If you are
 trying to submit a large file, Webin REST V1 submission endpoint may time out while the submission still is being
-processed. If this happens, you are recommended to use `Webin REST version 2 (V2) <programmatic.html>`_
+processed. If this happens, you are recommended to use :doc:`Webin REST version 2 (V2) </submit/general-guide/programmatic>`
 which prevents this error and has a number of other improvements.
 
 Production and test services
@@ -54,7 +54,7 @@ For example, by grouping SAMPLE records in a <SAMPLE_SET></SAMPLE_SET>.
 
 The maximum allowed size of a submitted XML file is 15MB.
 If your XML exceeds this size, please split your records into smaller XMLs and submit them across multiple submissions
-or use the `Webin V2 API <programmatic.html>`_.
+or use the :doc:`Webin V2 API </submit/general-guide/programmatic>`.
 
 Below is an example of a sequence read data submission to the Webin test service:
 

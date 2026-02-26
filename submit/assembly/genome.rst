@@ -16,7 +16,7 @@ Introduction
 ============
 
 Genome assemblies can be submitted to the European Nucleotide Archive (ENA)
-using the `Webin command line submission interface <../general-guide/webin-cli.html>`_ with ``-context genome`` option.
+using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` with ``-context genome`` option.
 
 Please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ if you intend to submit an assembly
 assembled from third party data.
@@ -61,19 +61,19 @@ Each submission must be associated with a pre-registered study and a sample.
 Genome assemblies except primary metagenomes are uniquely associated with a study and a sample.
 When assemblies are updated they must be re-submitted with the same study and sample as in the original submission.
 
-- `Register a Study <../study.html>`_
-- `Register a Sample <../samples.html>`_
+- :doc:`Register a Study </submit/study>`
+- :doc:`Register a Sample </submit/samples>`
 
 .. tip::
     Check your sample has a submittable taxonomy.
-    Your sample must have a `binomial taxonomy <../../faq/taxonomy.html#checking-a-taxon-is-submittable>`_.
+    Your sample must have a :ref:`binomial taxonomy <taxonomy-submittable>`.
     If the sample taxonomy is not **binomial**, then the genome assembly submission will fail validation.
 
 It is also strongly recommended to submit the reads from which the assembly was assembled.
 In order to reference the reads which were used to generate the assembly, please see the ``RUN_REF`` tag included in
 the manifest file below.
 
-- `Submit raw reads <../reads.html>`_
+- :doc:`Submit raw reads </submit/reads>`
 
 
 Register locus tag prefixes
@@ -82,7 +82,7 @@ Register locus tag prefixes
 This is only required if you are submitting an annotated assembly. Otherwise, please proceed to Stage 2.
 
 Locus tag prefixes should be registered with your study.
-See `here <../../faq/locus_tags.html>`_ for information on locus tags.
+See :doc:`here </faq/locus_tags>` for information on locus tags.
 Briefly, locus tag prefixes must:
 
 - Start with a letter
@@ -101,7 +101,7 @@ The set of files that are part of the submission are specified using a manifest 
 The manifest file is identified in the Webin-CLI command using the ``-manifest <filename>`` option.
 
 Please note that the types of file which may be involved in an assembly submission are more comprehensively documented
-in our page `Accepted Genome Assembly Data Formats <../fileprep/assembly.html>`_.
+in our page :doc:`Accepted Genome Assembly Data Formats </submit/fileprep/assembly>`.
 
 The set of files required for submission of a genome assembly depends on the assembly level:
 
@@ -115,7 +115,7 @@ Contig Assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
 
 The default assumption is that an assembly is contig-level, thus if a submission comprises the sequences with no
 additional context, it is treated as a contig-level assembly
@@ -133,8 +133,8 @@ Scaffold Assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
-- 0-1 `AGP files <../fileprep/assembly.html#agp-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
+- 0-1 :doc:`AGP files </submit/fileprep/assembly>`
 
 This assembly level requires information on the sequences and annotation (if any).
 A scaffold is an assemblage of contigs separated by gaps of known length.
@@ -156,10 +156,10 @@ Chromosome Assembly
 Consists of the following files:
 
 - 1 manifest file
-- 1 FASTA file OR 1 `flat file <../fileprep/assembly.html#flat-file>`_
-- 1 `chromosome list file <../fileprep/assembly.html#chromosome-list-file>`_
-- 0-1 `unlocalised list files <../fileprep/assembly.html#unlocalised-list-file>`_
-- 0-1 `AGP files <../fileprep/assembly.html#agp-file>`_
+- 1 FASTA file OR 1 :doc:`flat file </submit/fileprep/assembly>`
+- 1 :doc:`chromosome list file </submit/fileprep/assembly>`
+- 0-1 :doc:`unlocalised list files </submit/fileprep/assembly>`
+- 0-1 :doc:`AGP files </submit/fileprep/assembly>`
 
 This assembly level allows the submission of fully assembled replicons including chromosomes, organelles, plasmids, and
 viral segments. This requires information on the sequences and annotation (if any), and submission of a chromosome list
@@ -221,7 +221,7 @@ though of course at least one must be provided, and some may only be relevant in
 other file types. The available fields are as follows:
 
 - FASTA: sequences in fasta format
-- FLATFILE: sequences in `EMBL-Bank flat file format <../fileprep/flat-file-example.html>`_
+- FLATFILE: sequences in :doc:`EMBL-Bank flat file format </submit/fileprep/flat-file-example>`
 - AGP: sequences in `AGP format <https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/>`_
 - CHROMOSOME_LIST: list of chromosomes
 - UNLOCALISED_LIST: list of unlocalised sequences
@@ -245,9 +245,8 @@ For example, the following manifest file represents a genome assembly consisting
 Stage 3: Validate And Submit The Files
 ======================================
 
-Files are validated, uploaded and submitted using the `Webin command line submission interface
-<../general-guide/webin-cli.html>`_ (Webin-CLI).
-Please refer to the `Webin command line submission interface <../general-guide/webin-cli.html>`_ documentation for full
+Files are validated, uploaded and submitted using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` (Webin-CLI).
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation for full
 information about the submission process.
 
 Brief examples of Webin-CLI commands follow.
@@ -277,8 +276,7 @@ assigned accession number (see below) being reported at your command line.
 Meanwhile, a failed validation will provide direction to a report file where you can find a list of error messages
 explaining the reason for the failure, which you can address before re-attempting.
 
-For more information on how to install and use Webin-CLI, please refer to the `Webin-CLI Submission
-<../general-guide/webin-cli.html>`_ page.
+For more information on how to install and use Webin-CLI, please refer to the :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>` page.
 
 
 Assigned Accession Numbers
@@ -290,8 +288,7 @@ the submitter by the Webin command line submission interface (Webin-CLI).
 ERZ accessions **should not** be used to reference the assembly in publications.
 The purpose of the ERZ accession number is for the submitter to be able to refer to their submission within the Webin
 submission service. For example, the submitter can retrieve the assigned genome assembly and sequence accessions from
-the `Webin Portal <../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../general-guide/reports-service.html>`_ using the ERZ accession number.
+the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>` using the ERZ accession number.
 This accession should be used to refer to the assembly in any conversations with helpdesk staff.
 
 For genome assemblies, long term stable accession numbers that can be used in publications are:
@@ -302,9 +299,7 @@ For genome assemblies, long term stable accession numbers that can be used in pu
   released on agreement with GenCol. The GCA is stable between versions
 - Sequence accession(s) assigned once the genome assembly submission has been fully processed by ENA
 
-Submitters can retrieve the genome and sequence accession numbers from the `Webin Portal
-<../general-guide/submissions-portal.html>`_ or from the `Webin reports service
-<../general-guide/reports-service.html>`_.
+Submitters can retrieve the genome and sequence accession numbers from the :doc:`Webin Portal </submit/general-guide/submissions-portal>` or from the :doc:`Webin reports service </submit/general-guide/reports-service>`.
 These accession numbers are also sent to the submitters by e-mail.
 
 

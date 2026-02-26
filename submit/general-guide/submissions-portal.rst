@@ -7,9 +7,9 @@ The `Webin Portal <https://www.ebi.ac.uk/ena/submit/webin/>`_ is ENA's convenien
 creating and reviewing submissions.
 This guide discusses it from the perspective of a user who wishes to review the content and status of their
 existing submissions.
-For advice on how to create submissions, please visit the general guide to `Interactive Submission <interactive.html>`_.
+For advice on how to create submissions, please visit the general guide to :doc:`Interactive Submission </submit/general-guide/interactive>`.
 This page does not deal with updating your submissions, please see
-`Interactive Metadata Update <../../update/metadata/interactive.html>`_ for advice on this.
+:doc:`Interactive Metadata Update </update/metadata/interactive>` for advice on this.
 
 To access Webin Portal, visit the link and log in with your standard Webin credentials (or create an account if you don't
 already have one): https://www.ebi.ac.uk/ena/submit/webin/
@@ -30,7 +30,7 @@ Those which are covered in this article are bolded:
 - Registration of new taxa
 - **Reports on files which have been uploaded but not submitted**
 
-All reports are enabled by the `Webin Reports Service <reports-service.html>`_, an API.
+All reports are enabled by the :doc:`Webin Reports Service </submit/general-guide/reports-service>`, an API.
 
 
 Metadata Reports
@@ -70,7 +70,7 @@ Unsubmitted Files
 
 When submitting data to ENA, it is often necessary to upload the data files in advance of submission.
 Your account comes with its own FTP area for this reason.
-See `Preparing Files for Submission <../fileprep.html>`_ for information on this.
+See :doc:`Preparing Files for Submission </submit/fileprep>` for information on this.
 
 You can  review the content of your directory through `Webin Portal <https://www.ebi.ac.uk/ena/submit/webin/>`_ Unsubmitted
 Files Report.
@@ -110,7 +110,7 @@ The below image shows the file report interface for runs; the interface for anal
 
 Where archiving failure has occurred, you will also be informed of email, with information about the errors.
 If your runs have failed archiving, you can often fix this yourself using information available in the
-`Common Run Submission Errors FAQ <../../faq/runs.html>`_.
+:doc:`Common Run Submission Errors FAQ </faq/runs>`.
 
 The information shown in this interface (for runs and analyses) deals with the archival of files, while the below
 section deals with the processing of files.

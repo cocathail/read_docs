@@ -5,8 +5,8 @@ How to Submit Other Analyses
 Introduction
 ============
 
-Any secondary analyses you wish to submit to ENA that are not `Assemblies <assembly.html>`_ 
-or `Annotated Sequences <sequence.html>`_ need to be submitted programmatically.
+Any secondary analyses you wish to submit to ENA that are not :doc:`Assemblies </submit/assembly>` 
+or :doc:`Annotated Sequences </submit/sequence>` need to be submitted programmatically.
 
 .. image:: images/metadata_model_analysis.png
    :align: center
@@ -27,9 +27,9 @@ required objects before beginning your analysis submission.
 
 How to register/submit other datasets to ENA:
 
-- `Register a study <study.html>`_ 
-- `Register samples <samples.html>`_
-- `Submit raw reads <reads.html>`_
+- :doc:`Register a study </submit/study>` 
+- :doc:`Register samples </submit/samples>`
+- :doc:`Submit raw reads </submit/reads>`
 
 
 Submission Options
@@ -38,7 +38,7 @@ Submission Options
 All analyses require programmatic submission.
 
 For an overview of how to submit programmatically, please 
-see the documentation on `Programmatic Submissions <general-guide/programmatic.html>`_.
+see the documentation on :doc:`Programmatic Submissions </submit/general-guide/programmatic>`.
 
 .. toctree::
    :maxdepth: 1

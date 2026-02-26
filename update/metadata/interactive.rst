@@ -41,7 +41,7 @@ These include the release date, title, description and publication references.
 
 2. Find the study you wish to edit in the list, or search for it by accession/name
 3. If your study is private, you can change the release date by clicking the pencil icon and navigating to the
-   required date in the calendar. Read more on this in our `Data Release Policies FAQ <../../faq/release.html>`_
+   required date in the calendar. Read more on this in our :doc:`Data Release Policies FAQ </faq/release>`
 4. For edits other than changing the release date, click the Action button and then the 'Edit study (project)' option
    for a graphical interface or the 'Edit study (project) XML' option to work in XML format
 
@@ -50,7 +50,7 @@ These include the release date, title, description and publication references.
 5. Edit values in this interface as required: the short name for the study will be visible in search outputs and
    overview pages whereas the descriptive title and abstract will be presented in the study's public page
 6. If you now wish to add a genome assembly with functional annotation to this study, start by checking the box for this
-   and then registering a `locus tag prefix <../..faq/locus_tags.html>`_ at the bottom of the page
+   and then registering a :doc:`locus tag prefix </faq/locus_tags>` at the bottom of the page
 7. You can add papers by searching the PubMed ID; through integration with ePMC these papers will then be linked from
    this study's page in the ENA Browser
 8. Add additional keywords as desired; for example you may add a DOI as shown above

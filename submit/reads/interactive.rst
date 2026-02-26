@@ -12,9 +12,9 @@ Experiments are linked with one sample and one study, as shown in the metadata m
 Before you register the run and experiment objects through the Webin Portal, you should have completed
 the following steps:
 
-- `Register a study <../study/interactive.html>`_
-- `Register a sample <../samples/interactive.html>`_
-- `Upload your read files <../fileprep/upload.html>`_
+- :doc:`Register a study </submit/study/interactive>`
+- :doc:`Register a sample </submit/samples/interactive>`
+- :doc:`Upload your read files </submit/fileprep/upload>`
 
 To start your read submission, log in to the `Webin Portal <https://www.ebi.ac.uk/ena/submit/webin>`_.
 You will need to complete three steps, described below:
@@ -114,5 +114,5 @@ them to an archive.
 If there are file errors, these will be reported to account holders by the registered email address(es).
 You can always check the processing status of your submissions via the run reports available in Webin Portal.
 
-See `Webin Portal Reports <../general-guide/submissions-portal.html>`_ for advice on retrieving information
+See :doc:`Webin Portal Reports </submit/general-guide/submissions-portal>` for advice on retrieving information
 about these submissions.

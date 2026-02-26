@@ -32,6 +32,8 @@
 # ones.
 extensions = ['sphinx_tabs.tabs', 'myst_parser']
 
+numfig = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -68,7 +70,7 @@ release = u'1'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', 'requirements.txt']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -88,20 +90,8 @@ todo_include_todos = False
 # Jasmine addition: it is reccommended to pin requirments - see https://docs.readthedocs.io/en/stable/guides/rep>
 html_theme = "sphinx_rtd_theme"
 
-# marc addition: from http://stackoverflow.com/questions/18969093/how-to-include-the-toctree-in-the-sidebar-of-each-page
-# remove if causing issues. forces globaltoc.html
-#html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'], }
-# and with localtoc (although this might be default)
-#html_sidebars = { '**': ['localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'], }
-#trial, this one has globaltoc.html AND localtoc.html
 html_sidebars = { '**': ['globaltoc.html','localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'], }
 
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -167,13 +157,7 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-# Jasmine addition: test use recommonmarkparser to parse .md files, remove if causing issues
-#from recommonmark.parser import CommonMarkParser
-#  
-#source_parsers = {
-#    '.md': CommonMarkParser,
-#}
-
+# RST is preferred for new files; Markdown is accepted for externally contributed content.
 source_suffix = {
     '.rst': 'restructuredtext',
     '.txt': 'markdown',

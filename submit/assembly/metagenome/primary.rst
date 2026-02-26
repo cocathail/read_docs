@@ -14,7 +14,7 @@ Introduction
 ============
 
 Metagenome assemblies can be submitted to the European Nucleotide Archive (ENA) using
-the `Webin command line submission interface <../../general-guide/webin-cli.html>`_ with ``-context genome``.
+the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` with ``-context genome``.
 
 Please contact our `helpdesk <https://www.ebi.ac.uk/ena/browser/support>`_ if you intend to submit an assembly
 assembled from third party data.
@@ -48,20 +48,20 @@ Each submission must be associated with a pre-registered study and environmental
 be the same sample used to submit your raw reads.
 
 When registering an environmental sample, please make sure the appropriate environmental checklist is chosen for
-this and an `environmental taxon <../../../faq/taxonomy.html#environmental-biome-level-taxonomy>`_ is used
+this and an :ref:`environmental taxon <biome-level-taxonomy>` is used
 (e.g. aquatic metagenome (tax id: 1169740)).
 
 The methods for submitting metagenomic studies and samples follow the same process as any other study/sample submission.
 Follow the links for more information.
 
-- `Register a Study <../../study.html>`_
-- `Register a Sample <../../samples.html>`_
+- :doc:`Register a Study </submit/study>`
+- :doc:`Register a Sample </submit/samples>`
 
 It is strongly recommended to submit and reference raw reads associated with the assembly being submitted.
 In order to reference the reads which were used to generate the assembly, please see the ``RUN_REF`` tag included in
 the manifest file below.
 
-- `Submit raw reads <../reads.html>`_
+- :doc:`Submit raw reads </submit/reads>`
 
 Stage 2: Prepare the files
 ==========================
@@ -122,9 +122,8 @@ For example, the following manifest file represents a primary metagenome assembl
 Stage 3: Validate and submit the files
 ======================================
 
-Files are validated, uploaded and submitted using the `Webin command line submission interface
-<../../general-guide/webin-cli.html>`_ (Webin-CLI).
-Please refer to the `Webin command line submission interface <../../general-guide/webin-cli.html>`_ documentation for full
+Files are validated, uploaded and submitted using the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` (Webin-CLI).
+Please refer to the :doc:`Webin command line submission interface </submit/general-guide/webin-cli>` documentation for full
 information about the submission process.
 
 Brief examples of Webin-CLI commands follow.
@@ -154,8 +153,7 @@ assigned accession number (see below) being reported at your command line.
 Meanwhile, a failed validation will provide direction to a report file where you can find a list of error messages
 explaining the reason for the failure, which you can address before re-attempting.
 
-For more information on how to install and use Webin-CLI, please refer to the `Webin-CLI Submission
-<../../general-guide/webin-cli.html>`_ page.
+For more information on how to install and use Webin-CLI, please refer to the :doc:`Webin-CLI Submission </submit/general-guide/webin-cli>` page.
 
 
 Assigned accession numbers

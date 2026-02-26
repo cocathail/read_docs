@@ -56,7 +56,7 @@ Fetch Records Using an Advanced Search
 
 This allows you to perform an advanced search and directly download the resulting records as XMLs. This is
 most useful when used alongside the `Portal API <https://www.ebi.ac.uk/ena/portal/api>`_. See our guide on how
-to perform programmatic advanced searches `here <advanced-search.html>`_.
+to perform programmatic advanced searches :doc:`here </retrieval/programmatic-access/advanced-search>`.
 
 Fetch Records Linked to a Sample, Taxon or Study
 ------------------------------------------------

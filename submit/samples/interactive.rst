@@ -99,5 +99,5 @@ If there are errors with the information you have entered, these will be reporte
 Note that at this point you have not submitted any data, but you have laid the groundwork for this by providing sample
 metadata.
 
-See `Webin Portal Reports <../general-guide/submissions-portal.html>`_ for advice on retrieving information
+See :doc:`Webin Portal Reports </submit/general-guide/submissions-portal>` for advice on retrieving information
 about these submissions.

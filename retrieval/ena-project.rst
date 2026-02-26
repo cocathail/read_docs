@@ -103,7 +103,7 @@ To explore the full contents of a project, you can see overviews of all records 
 Here we can see a list of all the records that are part of the ENA Project. You can click the *Help* button on the far
 right of the tab for more information on the organisation of an ENA project and what is included here. In this
 example, you can see that the project holds a number of Samples, Experiments and Runs (if you are not familiar
-with the different types of ENA records, have a look at the table in the `general guide <general-guide.html>`_). This
+with the different types of ENA records, have a look at the table in the :doc:`general guide </retrieval/general-guide>`). This
 means this project holds raw read data files.
 
 We can also see 'Europe PMC' records, 'MGnify' and 'MarCat' links. These are **cross-references** - records which
@@ -113,7 +113,7 @@ takes you to a MGnify study which allows you to explore the analyses performed b
 reads in project **PRJEB1787**.
 
 If you would like to learn more about exploring cross-references in ENA, please see
-`our guide on exploring cross-references <ena-project/cross-references.html>`_ for further information.
+:doc:`our guide on exploring cross-references </retrieval/ena-project/cross-references>` for further information.
 
 Feel free to explore the other cross-references available for this project or look into the MGnify analyses then
 navigate back to the Navigation tab in `PRJEB1787 <https://www.ebi.ac.uk/ena/browser/view/PRJEB1787>`_.
@@ -182,7 +182,7 @@ You can see the full list of checklists `here <https://www.ebi.ac.uk/ena/browser
 If you want to search for a particular type of sample (e.g. a soil sample), you can search across the archive by
 the checklist (e.g. searching for samples that used the
 `GSC MIxS soil <https://www.ebi.ac.uk/ena/browser/view/ERC000022>`_ checklist). See our guide on performing an
-`advanced search <advanced-search.html>`_ for details on how to do this.
+:doc:`advanced search </retrieval/advanced-search>` for details on how to do this.
 
 Keep an Eye Out For Help
 ========================
