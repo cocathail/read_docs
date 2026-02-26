@@ -56,7 +56,7 @@ If you cannot provide a value for a mandatory field within a checklist, please u
 .. note::
    From January 2025, the sample validation service will be replaced by validation via the `BioSamples Database (BSD) <https://www.ebi.ac.uk/biosamples/>`_.
    Samples will still be submitted and validated in the same manner as you previously have done; please see a
-   `summary table here <samples/sample_checklist/sample_checklist_errors.md>`_ for the changes in the validation messages.
+   :doc:`summary table here </submit/samples/sample_checklist/sample_checklist_errors>` for the changes in the validation messages.
    Samples will still be accessible via the ENA Browser and API.
 
 .. _sample-taxonomy:
