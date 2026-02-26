@@ -27,6 +27,7 @@ All internal links that used raw HTML paths (e.g. `` `Some page <../other/page.h
 - Links to whole pages use `` :doc:`Title </path/to/page>` ``
 - Links to specific sections (where a label exists) use `` :ref:`Title <label-name>` ``
 - Several pre-existing broken or malformed paths were also corrected as part of this pass (wrong number of `../` steps, a link pointing outside the docs root, absolute paths missing the `submit/` prefix)
+- Fixed a broken link in `submit/samples.rst` pointing to `sample_checklist_errors.md` — raw `.md` paths are not resolved by Sphinx and produced a 404; converted to a `:doc:` reference
 
 ### Admonitions (14 blocks across 8 files)
 Pieces of important advice that were buried in regular prose have been promoted to clearly styled callout blocks. Warnings are things that can cause errors or data loss; tips are helpful reminders.
