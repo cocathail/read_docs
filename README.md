@@ -1,7 +1,7 @@
 # ENA Documentation – Structural Improvements
 
 This branch contains a set of structural improvements to the ENA documentation source.
-The changes are purely editorial and organisational — no content has been removed or rewritten.
+The only net-new content is the quickstart guide; all other changes are editorial and organisational.
 
 ## What changed and why
 
@@ -59,6 +59,17 @@ Pieces of important advice that were buried in regular prose have been promoted 
 
 **`update/metadata.rst`**
 - Warning — Not all object attributes can be updated; controlled vocabularies apply to updates just as they do to original submissions
+
+### New page: first-submission quickstart guide (`submit/quickstart.rst`)
+The existing documentation is organised around submission object types (study, sample, reads, assembly), which works well as a reference but assumes the reader already knows what they need to submit. A new quickstart page has been added as the first entry in the submission section, aimed at users who have never submitted to ENA before.
+
+The page is structured around four common scenarios:
+- **Raw sequencing reads** — the most common case; walks through registering a study and samples then submitting read files
+- **Genome assembly** — includes a reminder to also submit the underlying reads and notes that Webin-CLI is required
+- **Targeted sequences** (e.g. 16S rRNA, COI, ITS) — clarifies this route is for short annotated sequences only, not whole-genome assemblies
+- **Metagenomic data** — outlines the assembly hierarchy and links to the metagenome FAQ
+
+Each scenario lists what is needed, the steps in order, and links through to the relevant existing detail pages. No existing content has been moved or rewritten.
 
 ## Note on redirects
 One redirect cannot be configured in code and must be set manually in the ReadTheDocs web admin under **Admin → Redirects**:
